@@ -63,8 +63,8 @@ function run(msg, matches)
     
 〰〰〰〰〰〰〰
 
-✨سایت اصلی: Tarfand.Ir ✨
-</i>]]
+سازنده : @liumex
+    </i>]]
 end
 
 return {
