@@ -123,10 +123,10 @@ local function kick_ban_res(extra, success, result)
         redis:srem(hash, member_id)
         return '<i>✨انجام شد\n کاربر انبن شد</i>✨'
       elseif get_cmd == 'banall' then
-        send_large_msg(receiver, '><i>✨ ['..user_id..' ] Banned for all @Getandroid Groups/SuperGroups! (Globally banned)</i>✨')
+        send_large_msg(receiver, '><i>✨ ['..user_id..' ] Banned for all @liumex Groups/SuperGroups! (Globally banned)</i>✨')
 		banall_user(member_id)
       elseif get_cmd == 'unbanall' then
-        send_large_msg(receiver, '><i>✨ ['..user_id..' ] Unbanned for all @Getandroid Groups/SuperGroups! (Unglobally banned)</i>✨')
+        send_large_msg(receiver, '><i>✨ ['..user_id..' ] Unbanned for all @liumex Groups/SuperGroups! (Unglobally banned)</i>✨')
 	    unbanall_user(member_id)
     end
 end
@@ -286,7 +286,7 @@ end
          	return false
         end
         	banall_user(targetuser)
-       		return '><i>✨ ['..user_id..' ] Banned for all @Getandroid Groups/SuperGroups! (Globally banned)</i>✨'
+       		return '><i>✨ ['..user_id..' ] Banned for all @liumex Groups/SuperGroups! (Globally banned)</i>✨'
      else
 	local cbres_extra = {
 		chat_id = msg.to.id,
@@ -306,7 +306,7 @@ end
           	return false
         end
        		unbanall_user(user_id)
-        	return '><i>✨ ['..user_id..' ] Unbanned for all @Getandroid Groups/SuperGroups! (Unglobally banned)</i>✨'
+        	return '><i>✨ ['..user_id..' ] Unbanned for all @liumex Groups/SuperGroups! (Unglobally banned)</i>✨'
     else
 		local cbres_extra = {
 			chat_id = msg.to.id,
